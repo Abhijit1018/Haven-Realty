@@ -1,0 +1,132 @@
+.hero {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+    padding: 8rem 0 3rem;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #fff;
+    margin-bottom: var(--space-sm);
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.statsBanner {
+    background: var(--color-bg-card);
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.statsRow {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    color: var(--color-primary);
+}
+
+.statItem strong {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+}
+
+.statItem span {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+.card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border-light);
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.quoteIcon {
+    color: var(--color-primary-100);
+    margin-bottom: var(--space-md);
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: var(--space-md);
+}
+
+.text {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: var(--space-xl);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border-light);
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.author strong {
+    display: block;
+    font-size: 0.92rem;
+}
+
+.author span {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

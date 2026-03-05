@@ -1,0 +1,133 @@
+.hero {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+    padding: 8rem 0 3rem;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #fff;
+    margin-bottom: var(--space-sm);
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.guidesGrid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+}
+
+.guideCard {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border-light);
+    transition: box-shadow var(--transition-base);
+}
+
+.guideCard:hover {
+    box-shadow: var(--shadow-xl);
+}
+
+.guideImage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 21/9;
+    overflow: hidden;
+}
+
+.guideImgOverlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--space-2xl);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+}
+
+.guideImgOverlay h2 {
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.guideImgOverlay span {
+    color: var(--color-accent-light);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.guideContent {
+    padding: var(--space-2xl);
+}
+
+.guideDesc {
+    font-size: 1rem;
+    margin-bottom: var(--space-xl);
+}
+
+.guideStats {
+    display: flex;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    padding: var(--space-lg);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+}
+
+.guideStat {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-primary);
+}
+
+.guideStat strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.guideStat span {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+}
+
+.guideSection {
+    margin-bottom: var(--space-lg);
+}
+
+.guideSection h4 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.guideSection p {
+    font-size: 0.92rem;
+}
+
+.hotspots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.hotspot {
+    padding: 0.35rem 0.9rem;
+    background: var(--color-primary-50);
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}

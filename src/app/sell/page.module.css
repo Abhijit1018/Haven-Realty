@@ -1,0 +1,187 @@
+.hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.heroBg {
+    object-fit: cover;
+    z-index: 0;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(44, 85, 48, 0.6));
+    z-index: 1;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    padding-top: 6rem;
+    max-width: 600px;
+}
+
+.heroLabel {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-accent-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-lg);
+}
+
+.hero h1 {
+    color: #fff;
+    margin-bottom: var(--space-md);
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-xl);
+}
+
+/* Steps */
+.stepsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    position: relative;
+}
+
+.stepCard {
+    text-align: center;
+    padding: var(--space-xl);
+    position: relative;
+}
+
+.stepNumber {
+    position: absolute;
+    top: 0;
+    right: var(--space-xl);
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--color-primary-50);
+    line-height: 1;
+}
+
+.stepIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-xl);
+    background: var(--color-primary-50);
+    color: var(--color-primary);
+    margin-bottom: var(--space-lg);
+}
+
+.stepCard h4 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.stepCard p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+/* Form Section */
+.formSection {
+    background: var(--color-bg-alt);
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: flex-start;
+}
+
+.benefitsCol h2 {
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.benefitsCol>p {
+    font-size: 1rem;
+    margin-bottom: var(--space-xl);
+}
+
+.benefitsList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.benefitsList li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    font-size: 0.95rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.benefitIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-50);
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.formCard {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border-light);
+}
+
+.formCard h3 {
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+}
+
+.formCard>p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-xl);
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+@media (max-width: 768px) {
+
+    .stepsGrid,
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+}

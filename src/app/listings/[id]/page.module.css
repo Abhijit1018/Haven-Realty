@@ -1,0 +1,323 @@
+.breadcrumb {
+    padding: 6rem 0 1.5rem;
+    background: var(--color-bg-alt);
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+
+.backLink:hover {
+    color: var(--color-primary);
+}
+
+/* Gallery */
+.gallerySection {
+    padding: var(--space-lg) 0;
+    background: var(--color-bg-alt);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.mainImage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.galleryImg {
+    object-fit: cover;
+}
+
+.imageActions {
+    position: absolute;
+    top: var(--space-lg);
+    right: var(--space-lg);
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.actionBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: var(--radius-full);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    color: var(--color-text);
+}
+
+.actionBtn:hover {
+    background: #fff;
+    box-shadow: var(--shadow-md);
+}
+
+.thumbs {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.thumb {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: border-color var(--transition-fast);
+    background: none;
+    padding: 0;
+}
+
+.thumbActive {
+    border-color: var(--color-primary);
+}
+
+.thumbImg {
+    object-fit: cover;
+}
+
+/* Detail Layout */
+.detailSection {
+    padding: var(--space-3xl) 0;
+}
+
+.detailGrid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: var(--space-3xl);
+    align-items: flex-start;
+}
+
+.titleRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    flex-wrap: wrap;
+}
+
+.propertyTitle {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-xs);
+}
+
+.propertyLocation {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.priceBox {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.price {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.priceNote {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+/* Specs */
+.specsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-md);
+    padding: var(--space-xl);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.specItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.specIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-100);
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.specLabel {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.specValue {
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.section {
+    margin-bottom: var(--space-xl);
+}
+
+.section h3 {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+/* Amenities */
+.amenitiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-sm);
+}
+
+.amenityItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-primary-50);
+    border-radius: var(--radius-md);
+    font-size: 0.88rem;
+    color: var(--color-primary-dark);
+    font-weight: 500;
+}
+
+/* Map */
+.mapEmbed iframe {
+    border-radius: var(--radius-lg);
+}
+
+/* Sidebar */
+.sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.inquiryCard {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border-light);
+}
+
+.inquiryCard h3 {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+.agentInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.agentPhone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: var(--color-border-light);
+    margin: var(--space-lg) 0;
+}
+
+.inquiryForm .form-group {
+    margin-bottom: var(--space-md);
+}
+
+/* Similar */
+.similar {
+    margin-top: var(--space-4xl);
+    padding-top: var(--space-3xl);
+    border-top: 1px solid var(--color-border-light);
+}
+
+.similar h2 {
+    margin-bottom: var(--space-xl);
+}
+
+.similarGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+@media (max-width: 1024px) {
+    .detailGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .similarGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .similarGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .thumbs {
+        overflow-x: auto;
+    }
+}
